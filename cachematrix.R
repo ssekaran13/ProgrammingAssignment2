@@ -13,6 +13,10 @@
 ## get the value of the matrix (accessor)
 ## set the value of the inverted matrix (mutator)
 ## get the value of the inverted matrix (accessor)
+## 
+## Credit: The logic in this function is based off the makeVector() function 
+##         in the example in Programming Assignment 2
+##
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -34,6 +38,9 @@ makeCacheMatrix <- function(x = matrix()) {
 ## computation. Otherwise, it computes the inverted matrix and updates the cache with the
 ## newly computed value via the setSolve function.
 ## 
+## Credit: The logic in this function is based off the cacheMean() function 
+##         in the example in Programming Assignment 2
+##
 cacheSolve <- function(x, ...) {
   m <- x$getSolve()
   if(!is.null(m)) {
